@@ -55,23 +55,18 @@ nav{
     color:var(--ci2);
     background:var(--ci1);
 }
-
 #profile{
     background-color: var(--ci1);
 }
-
 #work{
     background-color: var(--ci3);
 }
-
 #oneyear{
     background-color: var(--ci2);
 }
-
 #aboutweb{
     background-color: var(--ci5);
 }
-
 .canvas{
     position: absolute;
     left: calc((100% - 1280px) / 2);
@@ -89,21 +84,30 @@ nav{
     margin-bottom:5em;
     transition:all .3s;
 }
+.question{
+    font-size: 72px;
+}
 .side-left{
-    background:linear-gradient(to bottom right, #18FFFF , #EA80FC);
-    width:40%;
-    justify-content:center;
-    align-items:center;
+    background:linear-gradient(to bottom left, #18FFFF , #EA80FC);
+    width:33%;
     display:flex;
+    justify-content:center;
+    text-align:center;
+}
+.side-center{
+    background:linear-gradient(to bottom right, #18FFFF , #EA80FC);
+    width:33%;
+    display:flex;
+    justify-content:center;
     text-align:center;
 }
 .side-right{
-    background:white;
+    background:linear-gradient(to bottom left, #18FFFF , #EA80FC);
     color:var(--ci2);
-    width:60%;
-    padding:1em;
+    width:34%;
     box-sizing:border-box;
     display:flex;
-    text-align: left;
+    justify-content:center;
+    text-align:center;
 }
 
