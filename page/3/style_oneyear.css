@@ -56,6 +56,22 @@ nav{
     background:var(--ci1);
 }
 
+#profile{
+    background-color: var(--ci1);
+}
+
+#work{
+    background-color: var(--ci3);
+}
+
+#oneyear{
+    background-color: var(--ci2);
+}
+
+#aboutweb{
+    background-color: var(--ci5);
+}
+
 .canvas{
     position: absolute;
     left: calc((100% - 1280px) / 2);
@@ -91,18 +107,3 @@ nav{
     text-align: left;
 }
 
-#profile{
-    background-color: var(--ci1);
-}
-
-#work{
-    background-color: var(--ci3);
-}
-
-#oneyear{
-    background-color: var(--ci2);
-}
-
-#aboutweb{
-    background-color: var(--ci5);
-}
