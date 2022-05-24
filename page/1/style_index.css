@@ -23,7 +23,6 @@ nav{
     align-items:center;
     justify-content:space-between;
     box-sizing:border-box;
-    /* box-shadow:0px 5px 10px #0008; */
     font-family: 'Baloo Da 2', cursive;
 }
 #header{
@@ -33,7 +32,6 @@ nav{
     margin: 0 0 0 0;
 }
 .site{
-    /* width:4rem; */
     margin-left:1rem;
 }
 .nav-items{
@@ -95,6 +93,10 @@ nav{
 
 #profile{
     background-color: var(--ci1);
+}
+
+#work{
+    background-color: var(--ci3);
 }
 
 #oneyear{

@@ -23,7 +23,6 @@ nav{
     align-items:center;
     justify-content:space-between;
     box-sizing:border-box;
-    /* box-shadow:0px 5px 10px #0008; */
     font-family: 'Baloo Da 2', cursive;
 }
 #header{
@@ -33,7 +32,6 @@ nav{
     margin: 0 0 0 0;
 }
 .site{
-    /* width:4rem; */
     margin-left:1rem;
 }
 .nav-items{
@@ -42,7 +40,7 @@ nav{
     display:flex;
     justify-content:flex-end;
 }
-a{
+.nav_a{
     height:100%;
     display:inline-flex;
     align-items:center;
@@ -53,7 +51,7 @@ a{
     color:var(--ci5);
     font-size: 2em;
 }
-a:hover{
+.nav_a:hover{
     color:var(--ci2);
     background:var(--ci1);
 }
@@ -62,14 +60,43 @@ a:hover{
     position: absolute;
     left: calc((100% - 1280px) / 2);
     top: calc(((100% - 600px) / 2) + 40px);
-    /* top: 600px; */
     width: 1280px;
     height: 600px;
+    display: flex;
+    border-radius: 50px;
+    border: .11px solid white;
     z-index: 100;
+    background:blue;
+    overflow:hidden;
+    box-shadow:8px 8px 0px #0232;
+    margin:auto;
+    margin-bottom:5em;
+    transition:all .3s;
+}
+.side-left{
+    background:linear-gradient(to bottom right, #18FFFF , #EA80FC);
+    width:40%;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    text-align:center;
+}
+.side-right{
+    background:white;
+    color:var(--ci2);
+    width:60%;
+    padding:1em;
+    box-sizing:border-box;
+    display:flex;
+    text-align: left;
 }
 
 #profile{
     background-color: var(--ci1);
+}
+
+#work{
+    background-color: var(--ci3);
 }
 
 #oneyear{
