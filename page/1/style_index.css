@@ -128,7 +128,7 @@ nav{
     color: var(--ci5);
 }
 #name{
-    font-size: 32px;
+    font-size: 37px;
     font-family: 'Mali', cursive;
 }
 .name{
@@ -141,7 +141,7 @@ nav{
     margin:15px 0px 15px 0px;
 }
 p{
-    font-size: 30px;
+    font-size: 35px;
     margin: 15px 0px 15px 0px;
     color: var(--ci5);
 }
@@ -149,8 +149,8 @@ p{
 #social{
     width: auto;    
     height: auto;
-    font-size: 4em;
-    margin:30px 0px 30px 0px;
+    font-size: 3em;
+    margin:30px 0px 0px 0px;
 }
 #social a{
     padding: 0 5px 0 5px;
