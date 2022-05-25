@@ -69,10 +69,10 @@ nav{
 }
 .canvas{
     position: absolute;
-    left: calc((100% - 1280px) / 2);
-    top: calc(((100% - 600px) / 2) + 40px);
-    width: 1280px;
-    height: 600px;
+    left: calc((100% - 1000px) / 2);
+    top: calc(((100% - 500px) / 2) + 40px);
+    width: 1000px;
+    height: 500px;
     display: flex;
     border-radius: 50px;
     border: .11px solid white;
