@@ -105,11 +105,12 @@ nav{
     box-sizing:border-box;
     display:flex;
     text-align: left;
+    
 }
 
 .picture{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 15px solid var(--ci2);
     transition: all 0.5s;
@@ -120,16 +121,35 @@ nav{
     border: 15px solid var(--ci3);
 }
 .numid{
-    font-size: 5em;
+    font-size: 4em;
     font-family: 'Baloo Da 2', cursive;
     margin: 0 0 0 0;
-    padding-top: 5px;
+    padding-top: 10px;
     color: var(--ci5);
 }
+#name{
+    font-size: 32px;
+    font-family: 'Mali', cursive;
+}
+.name{
+    margin: 0;
+}
+.name_top{
+    margin:15px 0px 0px 0px;
+}
+.nickname{
+    margin:15px 0px 15px 0px;
+}
+p{
+    font-size: 30px;
+    margin: 15px 0px 15px 0px;
+    color: var(--ci5);
+}
+
 #social{
-    width: auto;
+    width: auto;    
     height: auto;
-    font-size: 6em;
+    font-size: 4em;
     margin:30px 0px 30px 0px;
 }
 #social a{
@@ -140,28 +160,4 @@ nav{
 i:hover{
     opacity: 0.7;
     transition: all 0.2s;
-}
-.name{
-    margin: 0;
-    font-size: 42px;
-    font-family: 'Mali', cursive;
-}
-.name_top{
-    margin:15px 0px 0px 0px;
-    font-size: 42px;
-    font-family: 'Mali', cursive;
-}
-.nickname{
-    margin:15px 0px 15px 0px;
-    font-size: 42px;
-    font-family: 'Mali', cursive;
-}
-p{
-    font-size: 52px;
-    margin: 15px 0px 15px 0px;
-    color: var(--ci5);
-}
-span{
-    color: var(--ci5);
-    font-size: 52px;
 }
