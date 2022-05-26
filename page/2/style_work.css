@@ -74,10 +74,10 @@ nav{
 
 .canvas{
     --wid: 1000px;
-    --hei: 500px;
+    --hei: 1000px;
     position: absolute;
     left: calc((100% - var(--wid)) / 2);
-    top: calc(((100% - var(--hei)) / 2) + 40px);
+    top: calc(((100% - 500px) / 2) + 40px);
     width: var(--wid);
     height: var(--hei);
     display: flex;
@@ -90,21 +90,32 @@ nav{
     margin:auto;
     margin-bottom:5em;
     transition:all .3s;
+    flex-direction: column;
 }
-.side-left{
-    background:linear-gradient(to bottom right, #18FFFF , #EA80FC);
-    width:40%;
+.picture{
+    --size: 50%;
+    width: var(--size);
+    height: var(--size);
+}
+.column .row{
+    float: left;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+#side{
+    display:flex;
     justify-content:center;
-    align-items:center;
-    display:flex;
+    align-items: center;
     text-align:center;
+    padding: 30px;
 }
-.side-right{
-    background:white;
-    color:var(--ci2);
-    width:60%;
-    padding:1em;
-    box-sizing:border-box;
-    display:flex;
-    text-align: left;
+.side_left{
+    width:30%;
+}
+.side_right{
+    width:50%;
 }
