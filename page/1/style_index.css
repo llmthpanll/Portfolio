@@ -1,9 +1,8 @@
 body{
-    --ci1:hsla(196, 86%, 72%, 1);
-    --ci2:hsla(237, 88%, 72%, 1);
-    --ci3:hsla(180, 69%, 58%, 1);
-    --ci4:hsla(200, 85%, 52%, 1);
-    --ci5:hsla(232, 66%, 36%, 1);
+    --c1:hsla(45, 100%, 81%, 1);
+    --c2:hsla(229, 16%, 14%, 1);
+    --c3:hsla(30, 33%, 98%, 1);
+    --c4:hsla(233, 93%, 70%, 1);
     width: 100%;
     height: 100%;
     margin:0;
@@ -16,7 +15,7 @@ body{
 nav{
     height:80px;
     width: 100%;
-    background-color: #ddd;
+    background-color: var(--c2);
     display:flex;
     position: absolute;
     top: 0%;
@@ -26,7 +25,7 @@ nav{
     font-family: 'Baloo Da 2', cursive;
 }
 #header{
-    color: var(--ci5);
+    color: var(--c4);
     font-family: 'Baloo Da 2', cursive;
     font-size: 4em;
     margin: 0 0 0 0;
@@ -48,28 +47,28 @@ nav{
     font-weight:bold;
     transition:all .2s;
     text-decoration:none;
-    color:var(--ci5);
+    color:var(--c4);
     font-size: 2em;
 }
 .nav_a:hover{
-    color:var(--ci2);
-    background:var(--ci1);
+    color:var(--c4);
+    background:var(--c3);
 }
 
 #profile{
-    background-color: var(--ci1);
+    background-color: var(--c4);
 }
 
 #work{
-    background-color: var(--ci3);
+    background-color: var(--c4);
 }
 
 #oneyear{
-    background-color: var(--ci2);
+    background-color: var(--c4);
 }
 
 #aboutweb{
-    background-color: var(--ci5);
+    background-color: var(--c4);
 }
 
 .canvas{
@@ -102,7 +101,7 @@ nav{
     }
 }
 .side-left{
-    background:linear-gradient(to bottom right, #18FFFF , #EA80FC);
+    background-color: var(--c4);
     width:40%;
     justify-content:center;
     align-items:center;
@@ -110,8 +109,8 @@ nav{
     text-align:center;
 }
 .side-right{
-    background:white;
-    color:var(--ci2);
+    background:var(--c2);
+    color:var(--c4);
     width:60%;
     padding:1em;
     box-sizing:border-box;
@@ -124,20 +123,20 @@ nav{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 15px solid var(--ci2);
+    border: 15px solid var(--c3);
     transition: all 0.5s;
 }
 .picture:hover{
     transform: scale(1.1) rotate(-10deg);
     transition: all 0.5s;
-    border: 15px solid var(--ci3);
+    border: 15px solid var(--c2);
 }
 .numid{
     font-size: 4em;
     font-family: 'Baloo Da 2', cursive;
     margin: 0 0 0 0;
     padding-top: 10px;
-    color: var(--ci5);
+    color: var(--c3);
 }
 #name{
     font-size: 25px;
@@ -155,7 +154,7 @@ nav{
 p{
     font-size: 35px;
     margin: 15px 0px 15px 0px;
-    color: var(--ci5);
+    color: var(--c3);
 }
 .row{
     display: flex;
@@ -171,13 +170,15 @@ p{
     height: auto;
     font-size: 3em;
     margin:30px 0px 0px 0px;
+
 }
 #social a{
     padding: 0 5px 0 5px;
     text-decoration:none;
     transition: all 0.2s;
+    color: var(--c3);
 }
 i:hover{
-    opacity: 0.7;
+    opacity: 0.6;
     transition: all 0.2s;
 }

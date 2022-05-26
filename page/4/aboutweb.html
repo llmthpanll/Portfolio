@@ -26,7 +26,69 @@
         </div>
     </nav>
     <div id="aboutweb"  class="canvas">
-
+        <div class="side-left">
+            <div>
+                <button class="btn" onClick="hsl()">Hsl Color</button>
+                <button class="btn" onClick="calc()">Calc Var</button>
+                <button class="btn" onClick="posi()">Position</button>
+                <button class="btn" onClick="anima()">Animation</button>
+            </div>
+        </div>
+        <div id="ani"class="side-right">
+            <div id="txt_1"class="txt">
+                <div style="padding: 60px;">HSL ทฤษฎีสีใช้บนงานดิจิตัล
+                    เป็นระบบสีแบบการมองเห็นของสายตามนุษย์ ซึ่งแบ่งออกเป็น 3 ลักษณะ คือ
+                    
+                    HSL นั้นย่อมาจากคำว่า Hue, Saturation และ Lightness</div>
+            </div>
+            <div id="txt_2"class="txt">
+                <div style="padding: 60px;">
+                    Calc ใช้ในการคำนวหน่วยที่ต่างกัน <br>
+                    Var เสมือนตัวแปร ที่สามารถไปแทนที่ไหนก็ได้
+                </div>
+            </div>
+            <div id="txt_3"class="txt">
+                <div style="padding: 60px;">
+                    Position ใช้ในการจัดตำแหน่งภายในเว็บ
+                </div>
+            </div>
+            <div id="txt_4"class="txt">
+                <div style="padding: 60px;">
+                    ใช้ Animation ในการหมุนและซูมเพื่อเพิ่มลูกเล่นภายในเว็บ
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        function hsl(){
+            document.getElementById("ani").style.transition="all 0.25s";
+            document.getElementById("txt_1").style.zIndex = "1";
+            document.getElementById("txt_2").style.zIndex = "-1";
+            document.getElementById("txt_3").style.zIndex = "-1";
+            document.getElementById("txt_4").style.zIndex = "-1";
+        }
+        function calc(){
+            document.getElementById("ani").style.transition="all 0.25s";
+            document.getElementById("txt_1").style.zIndex = "-1";
+            document.getElementById("txt_2").style.zIndex = "1";
+            document.getElementById("txt_3").style.zIndex = "-1";
+            document.getElementById("txt_4").style.zIndex = "-1";
+        }
+        function posi(){
+            document.getElementById("ani").style.transition="all 0.25s";
+            document.getElementById("txt_1").style.zIndex = "-1";
+            document.getElementById("txt_2").style.zIndex = "-1";
+            document.getElementById("txt_3").style.zIndex = "1";
+            document.getElementById("txt_4").style.zIndex = "-1";
+        }
+        function anima(){
+            document.getElementById("ani").style.transition="all 0.25s";
+            document.getElementById("txt_1").style.zIndex = "-1";
+            document.getElementById("txt_2").style.zIndex = "-1";
+            document.getElementById("txt_3").style.zIndex = "-1";
+            document.getElementById("txt_4").style.zIndex = "1";
+        }
+    </script>
 </body>
 </html>
+
