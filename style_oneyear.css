@@ -115,6 +115,7 @@ nav{
     color: var(--c2);
     opacity: 1;
     animation: start 1s linear;
+    font-family: 'Mali', cursive;
 }
 @keyframes start{
     from{
@@ -131,6 +132,7 @@ nav{
     opacity: 1;
     transform: translateY(20px);
     animation: start2 2s linear;
+    font-family: 'Mali', cursive;
 }
 
 @keyframes start2{

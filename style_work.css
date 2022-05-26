@@ -74,7 +74,7 @@ nav{
 
 .canvas{
     --wid: 1000px;
-    --hei: auto;
+    --hei: 1100px;
     position: absolute;
     left: calc((100% - var(--wid)) / 2);
     top: calc(((100% - 500px) / 2) + 40px);
@@ -88,7 +88,7 @@ nav{
     overflow:hidden;
     box-shadow:8px 8px 0px #0232;
     margin:auto;
-    margin-bottom:5em;
+    margin-bottom:10em;
     transition:all .3s;
     flex-direction: column;
     animation: start 1s linear;
@@ -102,7 +102,10 @@ nav{
         opacity: 1;
     }
 }
-
+.box{
+    height: 85em;
+    background-color: transparent;
+}
 .picture{
     --size: 80%;
     width: var(--size);
