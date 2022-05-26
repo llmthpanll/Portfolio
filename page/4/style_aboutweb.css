@@ -73,11 +73,13 @@ nav{
 }
 
 .canvas{
+    --wid: 1000px;
+    --hei: 500px;
     position: absolute;
-    left: calc((100% - 1000px) / 2);
-    top: calc(((100% - 500px) / 2) + 40px);
-    width: 1000px;
-    height: 500px;
+    left: calc((100% - var(--wid)) / 2);
+    top: calc(((100% - var(--hei)) / 2) + 40px);
+    width: var(--wid);
+    height: var(--hei);
     display: flex;
     border-radius: 50px;
     border: .11px solid white;
