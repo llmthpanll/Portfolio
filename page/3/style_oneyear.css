@@ -127,12 +127,12 @@ nav{
     color: var(--ci6);
     opacity: 1;
     transform: translateY(20px);
-    animation: start2 3s linear;
+    animation: start2 2s linear;
 }
 
 @keyframes start2{
     from{
-        transform: translateY(280px);
+        transform: translateY(250px);
         opacity: 0;
     }
     to{

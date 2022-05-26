@@ -90,6 +90,16 @@ nav{
     margin:auto;
     margin-bottom:5em;
     transition:all .3s;
+    animation: start 1s linear;
+}
+
+@keyframes start{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .side-left{
     background:linear-gradient(to bottom right, #18FFFF , #EA80FC);

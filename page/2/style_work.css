@@ -91,32 +91,42 @@ nav{
     margin-bottom:5em;
     transition:all .3s;
     flex-direction: column;
+    animation: start 1s linear;
 }
+
+@keyframes start{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .picture{
-    --size: 50%;
+    --size: 80%;
     width: var(--size);
     height: var(--size);
     border-radius: 15px;
+    transition: all 0.4s;
 }
-.row .column{
+.picture:hover{
+    transform: scale(1.15);
+    border-radius: 20%;
+}
+.row{
+    margin: 3em 0 0 0;
+    padding: 0em;
+}
+.column{
     float: left;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
 }
-#side{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
-    padding: 30px;
-}
-.side_left{
-    width:30%;
-}
-.side_right{
-    width:50%;
+.name{
+    font-family: 'Mali', cursive;
 }
