@@ -74,7 +74,7 @@ nav{
 
 .canvas{
     --wid: 1000px;
-    --hei: 1000px;
+    --hei: auto;
     position: absolute;
     left: calc((100% - var(--wid)) / 2);
     top: calc(((100% - 500px) / 2) + 40px);
@@ -96,8 +96,9 @@ nav{
     --size: 50%;
     width: var(--size);
     height: var(--size);
+    border-radius: 15px;
 }
-.column .row{
+.row .column{
     float: left;
     padding: 10px;
     display: flex;
