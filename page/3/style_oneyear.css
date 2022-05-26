@@ -110,9 +110,33 @@ nav{
     font-size: 25px;
     margin: 0 0 0 0;
     color: var(--ci5);
+    opacity: 1;
+    animation: start 1s linear;
+}
+@keyframes start{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .ans{
     font-size: 16px;
     margin: 0 0 0 0;
     color: var(--ci6);
+    opacity: 1;
+    transform: translateY(20px);
+    animation: start2 3s linear;
+}
+
+@keyframes start2{
+    from{
+        transform: translateY(280px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(20px);
+        opacity: 1;
+    }
 }
